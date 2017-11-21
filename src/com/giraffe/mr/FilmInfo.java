@@ -14,7 +14,7 @@ public class FilmInfo {
 	//上映时间
 	private String date;
 	//评分OK
-	private String grade;
+	private double score;
 	//剧情
 	private String rate;
 	//图片地址
@@ -26,12 +26,7 @@ public class FilmInfo {
 	public void setImg(String img) {
 		this.img = img;
 	}
-	public String getGrade() {
-		return grade;
-	}
-	public void setGrade(String grade) {
-		this.grade = grade;
-	}
+
 	public String getTitle() {
 		return title;
 	}
@@ -68,10 +63,16 @@ public class FilmInfo {
 	public void setRate(String rate) {
 		this.rate = rate;
 	}
-	@Override
-	public String toString() {
-		return "FilmInfo [title=" + title + ", direct=" + direct + ", actors=" + actors + ", type=" + type + ", date="
-				+ date + ", grade=" + grade + ", rate=" + rate + ", img=" + img + "]";
+	public int getId() {
+		return id;
 	}
-	
+	public void setId(int id) {
+		this.id = id;
+	}
+	public double getScore() {
+		return score;
+	}
+	public void setScore(double score) {
+		this.score = score;
+	}
 }

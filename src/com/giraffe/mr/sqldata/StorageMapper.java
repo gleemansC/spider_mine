@@ -9,10 +9,10 @@ import org.apache.ibatis.annotations.Select;
 import com.giraffe.mr.FilmInfo;
 import com.giraffe.mr.Spider;
 
-public interface InsertMapper {
+public interface StorageMapper {
 		
-		@Insert("insert into spider(title,direct,actors,type,date,grade,rate,img) "
-				+"values (#{title},#{direct},#{actors},#{type},#{date},#{grade},#{rate},#{img})")
+		@Insert("insert into spider(id,title,direct,actors,type,date,score,rate,img) "
+				+"values (#{id}, #{title},#{direct},#{actors},#{type},#{date},#{score},#{rate},#{img})")
 		void insertAlldata(FilmInfo f);
 		
 //		@Insert("insert into spider(title,direct,actors,type,date,grade,rate,img) "
